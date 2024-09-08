@@ -14,6 +14,7 @@ public abstract class CommandeDocument implements Commande {
     }
 
 
+
     @Override
     public void executer() {
         System.out.println(this.document);

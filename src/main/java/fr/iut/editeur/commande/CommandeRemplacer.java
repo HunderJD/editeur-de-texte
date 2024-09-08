@@ -16,6 +16,7 @@ public class CommandeRemplacer extends CommandeDocument {
             return;
         }
 
+
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
         String chaine = parameters[3];
