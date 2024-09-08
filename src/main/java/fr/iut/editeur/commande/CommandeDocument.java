@@ -13,8 +13,10 @@ public abstract class CommandeDocument implements Commande {
         this.parameters = parameters;
     }
 
+
     @Override
     public void executer() {
         System.out.println(this.document);
     }
 }
+
