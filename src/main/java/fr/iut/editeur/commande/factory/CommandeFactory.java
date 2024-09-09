@@ -1,6 +1,7 @@
 package fr.iut.editeur.commande.factory;
 
 import fr.iut.editeur.commande.*;
+import fr.iut.editeur.document.CommandeClear;
 import fr.iut.editeur.document.Document;
 
 public class CommandeFactory {
@@ -28,7 +29,7 @@ public class CommandeFactory {
 
             case "effacer" : return new CommandeEffacer(document, parameters);
 
-
+            case "clear" : return new CommandeClear(document, parameters);
         }
     }
 
