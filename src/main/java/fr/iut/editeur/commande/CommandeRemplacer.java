@@ -9,12 +9,13 @@ public class CommandeRemplacer extends CommandeDocument {
         super(document, parameters);
     }
 
+
     @Override
-    public void executer() {
+    public void commandeExecuter() {
         if(parameters.length < 4) {
             System.err.println("Format attendu : remplacer;debut;fin;chaine");
             return;
-        }
+        } //TODO refaire par message derreurs
 
 
         int debut = Integer.parseInt(parameters[1]);
@@ -22,7 +23,6 @@ public class CommandeRemplacer extends CommandeDocument {
         String chaine = parameters[3];
 
         this.document.remplacer(debut, fin, chaine);
-        super.executer();
     }
 
 }

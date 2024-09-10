@@ -38,9 +38,7 @@ public class Document {
 
 
         String sousTexte = this.texte.substring(debut, fin);
-
         String texteMaj = sousTexte.toUpperCase();
-
         remplacer(debut, fin, texteMaj);
 
     }

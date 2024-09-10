@@ -10,7 +10,7 @@ public class CommandeEffacer extends CommandeDocument {
     }
 
     @Override
-    public void executer() {
+    public void commandeExecuter() {
         if(parameters.length < 3) {
             System.err.println("Format attendu : remplacer;debut;fin;chaine");
             return;
@@ -22,7 +22,6 @@ public class CommandeEffacer extends CommandeDocument {
 
 
         this.document.effacer(debut, fin);
-        super.executer();
     }
 
 
