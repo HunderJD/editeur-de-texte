@@ -35,8 +35,6 @@ public class Document {
     }
 
     public void majuscules(int debut, int fin) {
-
-
         String sousTexte = this.texte.substring(debut, fin);
         String texteMaj = sousTexte.toUpperCase();
         remplacer(debut, fin, texteMaj);
@@ -44,12 +42,15 @@ public class Document {
     }
 
     public void effacer(int debut, int fin) {
-
         remplacer(debut, fin, "");
     }
 
     public void clear() {
         this.texte = "";
+    }
+
+    public void inserer(int debut, String texte) {
+        remplacer(debut, texte.length(), texte);
     }
 
 }
